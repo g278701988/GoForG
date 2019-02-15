@@ -26,5 +26,7 @@ func getGithubConfig() string {
 	return fmt.Sprintf("%v:%v\n(update every half hour)", jsData[0].Key, jsData[0].Value)
 }
 func Handler(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "<h1>Hello from Go on Now!</h1>")
+	ip2 := getGithubConfig()
+	fmt.Fprintf(responseWriter, "%s", ip2)
+      
 }
