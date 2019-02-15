@@ -27,6 +27,6 @@ func getGithubConfig() string {
 }
 func Handler(w http.ResponseWriter, r *http.Request) {
 	ip2 := getGithubConfig()
-	fmt.Fprintf(responseWriter, "%s", ip2)
+	fmt.Fprintf(w, "%s", ip2)
       
 }
