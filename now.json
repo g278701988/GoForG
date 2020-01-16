@@ -1,4 +1,7 @@
 {
+  "name": "proxy",
   "version": 2,
-  "builds": [{ "src": "*.go", "use": "@now/go" }]
+  "routes": [
+    {"src": "/v2ray/(.*)","dest": "https://chowblog.herokuapp.com"}
+  ]
 }
