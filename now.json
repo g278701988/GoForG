@@ -2,6 +2,6 @@
   "name": "proxy",
   "version": 2,
   "routes": [
-    {"src": "/v2ray/(.*)","dest": "https://chowblog.herokuapp.com"}
+    {"src": "/v2ray/(.*)","dest": "https://chowblog.herokuapp.com/$1"}
   ]
 }
